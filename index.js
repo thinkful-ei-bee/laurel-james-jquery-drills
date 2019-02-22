@@ -1,6 +1,9 @@
 function catCarousel() {
-    $('.thumbnails').on('click', 'img' function (event) {
-        const targetCat = $(event.currentTarget);
-        const otherCat = $('.thumbnails').not(targetCat);
+    $('thumbnail').on('click', function(event){
+        const targetCat = $(this).find('img').attr('src');
+        const otherCat = $(this).find('img').attr('alt');
+        $('.hero');
     })
 }
+
+$(catCarousel);
